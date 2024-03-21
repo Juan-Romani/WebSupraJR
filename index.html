@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Web Supra - Tu socio confiable en la creación de sitios web informativos y atractivos. Ofrecemos servicios de diseño web, desarrollo frontend y más. Contáctanos para empezar tu próximo proyecto web.">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-...." crossorigin="anonymous">
+
+    <title>Web Supra - Creación de Sitios Web Informativos</title>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logowebsupra.png" alt="Web Supra Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a class="menu-link" href="#inicio">Inicio</a></li>
+                <li><a class="menu-link" href="#nosotros">Sobre nosotros</a></li>
+                <li><a class="menu-link" href="#servicios">Servicios</a></li>
+                <li><a class="menu-link" href="#proyectos">Proyectos</a></li>
+                <li><a class="menu-link" href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburguesa">
+            <div class="barra"></div>
+            <div class="barra"></div>
+            <div class="barra"></div>
+        </div>
+
+
+
+    </header>
+
+    <!-- Hero -->
+    <section id="inicio" class="seccion">
+        <section id="hero" class="hero">
+            <video autoplay loop muted>
+                <source src="pexels-pavel-danilyuk-5495899 (1080p).mp4" type="video/mp4">
+            </video>
+
+            <div class="contenido-hero aparecer-animacion">
+                <h1>Bienvenido a WEB SUPRA</h1>
+                <p>Tu socio confiable en la creación de sitios web informativos y atractivos.</p>
+            </div>
+        </section>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section id="nosotros" class="seccion">
+        <h2>Sobre Nosotros</h2>
+        <div class="quienes-somos">
+            <div class="imagen-fundador">
+                <img src="fotojuan.jpg" alt="Foto de Juan Romani, Fundador de Web Supra">
+            </div>
+            <div class="texto-fundador">
+                <h3>Fundador: Juan Romani</h3>
+                <p>Hola, soy Juan Romani, fundador de Web Supra. En enero de 2024, decidí establecer esta empresa junto
+                    a un grupo de apasionados profesionales en programación, marketing digital y edición de contenido
+                    audiovisual.</p>
+                <p>Nuestra historia se nutre de mi experiencia como desarrollador frontend. Comencé mi viaje en el mundo
+                    del desarrollo web en enero de 2023, explorando de manera autodidacta y maravillándome al crear
+                    soluciones digitales desde cero.</p>
+                <p>Posteriormente, perfeccioné mis habilidades en el Instituto ICTD Calamuchita.</p>
+                <P>Hoy, en Web Supra, nos dedicamos a ofrecer servicios de diseño web, desarrollo frontend y creación de
+                    contenido informativo, desafiando límites y aprendiendo continuamente en este dinámico campo.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="seccion">
+        <div class="servicio">
+            <h2>Nuestros Servicios</h2>
+            <h3>¿Por qué es importante que tu negocio tenga presencia digital a través de un sitio web?</h3>
+
+            <div id="contenido-adicional-negocio" class="contenido-adicional-negocio">
+                <div class="menu-item">
+                    <p>✓ Tu clientes son hoy: 100% digital.</p>
+                    <p>✓ Hábitos: El usuario antes de comprar, tiene el hábito de buscar a través de las páginas web los
+                        productos, para informarse y así generar la compra.</p>
+                    <p>✓ Amplitud: La posibilidad de llegar a lugares más allá de tu zona, ya que no hay fronteras en el
+                        negocio online; esto produce mayor crecimiento para tu negocio.</p>
+                    <p>✓ Practicidad: Al contar con toda la información de tu negocio a nivel online, el usuario ya
+                        tiene toda la información previamente del producto que le permite efectivizar el momento de la
+                        compra. Además implica rapidez en la venta, mayor volumen de compras y menos carga laboral en el
+                        propio negocio.</p>
+
+                    <h3 class="texto-destacado"> ¿Qué estás esperando?</h3>
+                    <h3 class="texto-destacado">¡Uní las redes sociales a tu sitio web y hace crecer tus ventas!</h3>
+                </div>
+            </div>
+
+            <button id="ver-mas-btn-negocio" class="ver-mas-btn" onclick="toggleContentNegocio()">
+                <span class="ver-mas-label">&#9660;</span>
+            </button>
+        </div>
+
+
+        <div class="servicio">
+            <h3>Diseño Web</h3>
+
+            <div id="contenido-adicional-diseño" class="contenido-adicional-diseño">
+                <p>✓ Creamos tu sitio web con las últimas tendencias de diseño para ofrecer una experiencia única e
+                    impactante.</p>
+                <p>✓ Te ayudamos a crear tu manual de marca: logo, tipografías, colores para integrarla al sitio.</p>
+                <p>✓ Trabajamos para crear sitios simples, frescos que te representen e identifiquen.</p>
+            </div>
+
+            <button id="ver-mas-btn-diseño" class="ver-mas-btn" onclick="toggleContentDiseño()">
+                <span class="ver-mas-label">&#9660;</span>
+            </button>
+        </div>
+
+        <div class="servicio">
+            <h3>Sitios Web Informativos</h3>
+            <p><strong>¡Te imaginás tu negocio con todos tus productos en un solo lugar!</strong></p>
+
+            <div id="contenido-adicional-info" class="contenido-adicional-info">
+
+                <p>✓ Te ayudamos a transmitir tu mensaje de manera efectiva, proporcionando a tus visitantes la
+                    información que necesitan de forma clara y accesible.</p>
+                <p><strong>¿Por qué es mejor un sitio web informativo?</strong></p>
+                <p>✓ Es crucial para establecer la credibilidad de tu marca.</p>
+                <p>✓ Información relevante sobre tus productos, servicios y valores.</p>
+                <p>✓ Mejora tu visibilidad en línea y te destaca como líder en tu industria.</p>
+            </div>
+            <button id="ver-mas-btn-info" class="ver-mas-btn" onclick="toggleContentInfo()">
+                <span class="ver-mas-label">&#9660;</span>
+            </button>
+        </div>
+
+        <div class="servicio">
+            <h3>Desarrollo Frontend</h3>
+
+            <div id="contenido-adicional-desarrollo" class="contenido-adicional-desarrollo">
+
+                <p>✓ Implementación de interfaces de usuario interactivas y amigables.</p>
+                <p>✓ Nos enfocamos en el desarrollo frontend utilizando tecnologías modernas para asegurar una
+                    experiencia de usuario fluida y agradable:</p>
+                <div class="iconos">
+                    <div class="icono">
+                        <i class="fab fa-html5" style="color: #E44D26;"></i>
+                        <p>HTML5</p>
+                    </div>
+                    <div class="icono">
+                        <i class="fab fa-css3" style="color: #2965F1;"></i>
+                        <p>CSS3</p>
+                    </div>
+                    <div class="icono">
+                        <i class="fab fa-js" style="color: #F0DB4F;"></i>
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+            </div>
+            <button id="ver-mas-btn-desarrollo" class="ver-mas-btn" onclick="toggleContentDesarrollo()">
+                <span class="ver-mas-label">&#9660;</span>
+            </button>
+        </div>
+
+        <div class="servicio">
+            <h3>Mantenimiento Continuo para tu Sitio Web</h3>
+            <p><strong>¿No tenés tiempo para cargar información a tu sitio web?</strong></p>
+
+
+            <div id="contenido-adicional-mantenimiento" class="contenido-adicional-mantenimiento">
+                <p>✓ Ofrecemos servicios de mantenimiento continuo para garantizar que tu sitio web esté actualizado,
+                    seguro y funcione sin problemas.</p>
+                <p>✓ Incluye actualizaciones de contenido, seguridad y soporte técnico, lo que prolonga la vida útil de
+                    tu sitio y mejora la experiencia del usuario.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li>- Mantiene tu sitio actualizado y relevante.</li>
+                    <li>- Asegura la seguridad y funcionalidad continua.</li>
+                    <li>- Ofrece soporte técnico para resolver problemas rápidamente.</li>
+                </ul>
+            </div>
+            <button id="ver-mas-btn-mantenimiento" class="ver-mas-btn" onclick="toggleContentMantenimiento()">
+                <span class="ver-mas-label">&#9660;</span>
+            </button>
+        </div>
+
+        <div class="servicio">
+            <h3>Importancia de un Diseño Web Responsive</h3>
+            <p><strong>¡Un sitio web que pueda verse desde cualquier dispositivo!</strong></p>
+
+            <div id="contenido-adicional-responsive" class="contenido-adicional-responsive">
+
+                <p>✓ Desarrollamos sitios web completamente RESPONSIVE, adaptándose a diferentes tamaños de pantalla y
+                    dispositivos.</p>
+                <P>✓ Garantizamos una experiencia consistente y atractiva para tus visitantes en cualquier dispositivo,
+                    mejorando la accesibilidad y la retención de usuarios.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li>- Mayor accesibilidad en dispositivos móviles y tabletas.</li>
+                    <li>- Mejora la retención de usuarios en diferentes plataformas.</li>
+                    <li>- Optimiza el rendimiento en motores de búsqueda.</li>
+                </ul>
+            </div>
+            <button id="ver-mas-btn-responsive" class="ver-mas-btn" onclick="toggleContentResponsive()">
+                <span class="ver-mas-label">&#9660;</span>
+            </button>
+        </div>
+
+        <div class="servicio">
+            <h3>¿Cómo Ayuda la Integración de WhatsApp a mi Negocio?</h3>
+
+            <div id="contenido-adicional-wpp" class="contenido-adicional-wpp">
+
+                <p>✓ Integramos botones de contacto por WhatsApp en tus páginas web para facilitar la comunicación
+                    directa con tus usuarios.</p>
+                <p>✓ Mejora la interactividad y la accesibilidad para tus clientes, permitiéndoles contactarte de manera
+                    rápida y directa.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li>- Comunicación directa y rápida con los clientes.</li>
+                    <li>- Mejora la atención al cliente y la satisfacción.</li>
+                    <li>- Facilita la generación de leads y conversiones.</li>
+                </ul>
+            </div>
+            <button id="ver-mas-btn-wpp" class="ver-mas-btn" onclick="toggleContentWpp()">
+                <span class="ver-mas-label">&#9660;</span>
+            </button>
+        </div>
+
+        <div class="servicio">
+            <h3>Integración de Redes Sociales en tu Página Web</h3>
+
+            <div id="contenido-adicional-redes" class="contenido-adicional-redes">
+
+                <p>✓ Agregamos botones de redes sociales en tus páginas web para fortalecer la presencia de tu negocio
+                    en plataformas populares.</p>
+                <p>✓ Mejora la visibilidad de tu marca y permite a los usuarios conectarse contigo a través de
+                    diferentes canales.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li>- Fortalece la presencia de tu marca en redes sociales.</li>
+                    <li>- Facilita la interacción y conexión con tu audiencia.</li>
+                    <li>- Aumenta la visibilidad y alcance de tu negocio.</li>
+                </ul>
+            </div>
+            <button id="ver-mas-btn-redes" class="ver-mas-redes" onclick="toggleContentRedes()">
+                <span class="ver-mas-label">&#9660;</span>
+            </button>
+        </div>
+        <div class="texto-final">
+            <h3 class="texto-destacado">WEB SUPRA ¡En un solo lugar todas las soluciones!</h3>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section class="proyectos" id="proyectos">
+        <h2>Proyectos Destacados</h2>
+
+        <div class="proyecto">
+            <h3>Plantilla Web Informativa</h3>
+            <a href="https://juan-romani.github.io/PlantillaCafeteria/">
+                <img src="cafeteria.png" alt="PlantillaCafeteria" width="350" height="200">
+            </a>
+            <p>¡Destaca tu presencia en línea con nuestra Página Web Informativa!</p>
+            <p>Diseñada para transmitir información clave de manera efectiva.</p>
+
+            <button id="ver-mas-btn-infor" class="ver-mas-btn" onclick="toggleContentInfor()">
+                <span class="ver-mas-label">&#9660;</span>
+            </button>
+
+            <div id="contenido-adicional-infor" class="contenido-adicional-infor">
+                <p>INCLUYE</p>
+                <p>✓ Diseño moderno y atractivo para una experiencia visual impactante.</p>
+                <p>✓ Funcionalidad RESPONSIVE para una visualización óptima en dispositivos móviles y tablets.</p>
+                <p>✓ Seguridad SSL para proteger la información de tus visitantes y mejorar la confianza en tu sitio.
+                </p>
+                <p>✓ Integración de redes sociales para conectar con tu audiencia y ampliar la visibilidad de tu marca.
+                </p>
+                <p>✓ Botón de WhatsApp para facilitar la comunicación directa con tus clientes potenciales.</p>
+                <p>✓ Inclusión del mapa de ubicación para guiar a los visitantes a tu ubicación física.</p>
+                <p>✓ Optimización SEO básica para mejorar la visibilidad en motores de búsqueda.</p>
+
+
+
+            </div>
+
+        </div>
+
+        </div>
+
+        <div class="proyecto">
+            <h3>Plantilla Web Muestra De Productos</h3>
+            <a href="https://juan-romani.github.io/PlantillaCompras/">
+                <img src="compras.png" alt="PlantillaCompras" width="350" height="200">
+            </a>
+            <p>¡Potencia tu presencia en línea con nuestra Página Web de Muestra de Productos!</p>
+            <p>Diseñada para exhibir tus productos de manera atractiva.
+            </p>
+
+            <button id="ver-mas-btn-compras" class="ver-mas-btn" onclick="toggleContentCompras()">
+                <span class="ver-mas-label">&#9660;</span>
+            </button>
+
+            <div id="contenido-adicional-compras" class="contenido-adicional-compras">
+                <p>INCLUYE</p>
+                <p>✓ Diseño moderno y atractivo para una experiencia visual impactante.</p>
+                <p>✓ Funcionalidad RESPONSIVE para una visualización óptima en dispositivos móviles y tablets.</p>
+                <p>✓ Barra de búsqueda que permite a los usuarios buscar fácilmente productos específicos.</p>
+                <p>✓ Seguridad SSL para proteger la información de tus visitantes y mejorar la confianza en tu sitio.
+                </p>
+                <p>✓ Integración de redes sociales para conectar con tu audiencia y ampliar la visibilidad de tu marca.
+                </p>
+                <p>✓ Botón de WhatsApp para facilitar la comunicación directa con tus clientes potenciales.</p>
+                <p>✓ Inclusión del mapa de ubicación para guiar a los visitantes a tu ubicación física.</p>
+                <p>✓ Optimización SEO básica para mejorar la visibilidad en motores de búsqueda.</p>
+
+
+
+            </div>
+
+        </div>
+
+        <div class="proyecto">
+            <h3>Plantilla Web Interactiva</h3>
+            <a href="https://juan-romani.github.io/reel-supra/">
+                <img src="reelsupra.png" alt="Web Reel-Supra" width="350" height="200">
+            </a>
+
+            <p>¡Resalta tu presencia en línea con nuestra Página Web Interactiva!</p>
+            <p>diseñada para ofrecer una experiencia envolvente y destacar de manera atractiva tus productos y
+                servicios.
+            </p>
+
+            <button id="ver-mas-btn-inter" class="ver-mas-btn" onclick="toggleContentInter()">
+                <span class="ver-mas-label">&#9660;</span>
+            </button>
+
+            <div id="contenido-adicional-inter" class="contenido-adicional-inter">
+                <p>INCLUYE</p>
+                <p>✓ Inicio Interactivo en Forma de Menú Centrado que le permite al usuario abrir fácilmente distintas
+                    secciones y comenzar su experiencia de navegación.
+                </p>
+                <p>✓ Funcionalidad RESPONSIVE para una visualización óptima en dispositivos móviles y tablets.</p>
+                <p>✓ Seguridad SSL para proteger la información de tus visitantes y mejorar la confianza en tu sitio.
+                </p>
+                <p>✓ Integración de redes sociales para conectar con tu audiencia y ampliar la visibilidad de tu marca.
+                </p>
+                <p>✓ Botón de WhatsApp para facilitar la comunicación directa con tus clientes potenciales.</p>
+                <p>✓ Inclusión del mapa de ubicación para guiar a los visitantes a tu ubicación física.</p>
+                <p>✓ Optimización SEO básica para mejorar la visibilidad en motores de búsqueda.</p>
+
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="seccion">
+        <h2>Contacto</h2>
+        <p>¡Contáctanos para empezar tu próximo proyecto web!</p>
+        <ul>
+            <li><i class="far fa-envelope"></i> <a
+                    href="https://mail.google.com/mail/?view=cm&to=empresawebsupra@gmail.com">empresawebsupra@gmail.com</a>
+            </li>
+            <li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/company/web-supra/"
+                    target="_blank">Web-supra</a></li>
+            <li><i class="fab fa-github"></i><a href="https://github.com/Juan-Romani" target="_blank">Juan-Romani</a>
+            </li>
+            <li><i class="fab fa-whatsapp"></i><a href="https://wa.me/3571346147" target="_blank">Whatsapp</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3><a href="politica-de-privacidad.html">Política de Privacidad</a></h3>
+                <p>Lee nuestra política de privacidad para entender cómo manejamos la información del usuario en nuestro
+                    sitio.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3><a href="politica-de-seguridad.html">Seguridad del Sitio</a></h3>
+                <p>Nuestro sitio utiliza conexiones seguras y medidas de seguridad para proteger tu información. Más
+                    detalles en nuestra política de seguridad.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3><a href="contacto.html">Contacto</a></h3>
+                <p>¿Tienes alguna pregunta o preocupación relacionada con la seguridad? No dudes en contactarnos.</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>2024 Web Supra. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=3571346147" target="_blank" rel="noopener noreferrer">
+        <img src="whatsapp.png" alt="WhatsApp">
+        <span>Contactanos por WhatsApp</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

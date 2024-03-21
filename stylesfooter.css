@@ -1,0 +1,297 @@
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-image: url('fondoprogramacion.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background: linear-gradient(to bottom, #19242d, #091116);
+    color: #fff;
+    padding: 10px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 320px) {
+    header {
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.logo {
+    margin-left: 20px;
+    margin-bottom: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.logo img {
+    margin-top: 10px;
+    display: inline-block;
+    max-width: 90%;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .logo {
+        margin-left: 10px;
+        margin-bottom: auto;
+    }
+
+    .logo img {
+        max-width: 80%;
+        max-height: 60px;
+        width: auto;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 400px) {
+    .btn-volver {
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 0;
+    }
+}
+
+main {
+    margin-top: 80px;
+    background-color: #000000b6;
+    padding: 20px;
+    text-align: center;
+}
+
+h1,
+h3 {
+    color: #3f9142;
+    text-shadow: 3px 3px 4px #000;
+}
+
+p {
+    color: #fff;
+    text-shadow: 3px 3px 4px #000;
+}
+
+a {
+    font-size: 20px;
+    text-decoration: none;
+    text-shadow: #000;
+}
+
+footer {
+    background-color: #091116;
+    color: #fff;
+    text-shadow: 3px 3px 4px #000;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-section {
+    max-width: 600px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #4caf50;
+    text-shadow: 3px 3px 4px #000;
+}
+
+.footer-section p {
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+}
+
+.footer-bottom p {
+    font-size: 0.9em;
+}
+
+.footer-section a:hover {
+    color: white;
+    text-shadow: 3px 3px 4px #000;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 1em;
+    margin-bottom: 0;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #357937;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer-bottom p::before {
+    content: "\00a9";
+    font-size: 1.2em;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+
+@keyframes moverArribaAbajo {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+a.contacto {
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    animation: moverArribaAbajo 1s infinite;
+}
+
+.btn-volver {
+    font-size: 16px;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    margin-right: 20px;
+}
+
+.btn-volver:hover {
+    background-color: #337537;
+}
+
+a[href^="https://api.whatsapp.com"] {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    background-color: #25d366;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+a[href^="https://api.whatsapp.com"] img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+a[href^="https://api.whatsapp.com"] span {
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+
+#contacto {
+    background-color: #35424a70;
+    color: #b8c7d1;
+    text-shadow: 3px 3px 4px #000;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#contacto h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #4caf50;
+}
+
+#contacto p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+#contacto ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#contacto li {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+#contacto li i {
+    margin-right: 10px;
+    font-size: 1.5em;
+    color: #4caf50;
+}
+
+#contacto li a {
+    text-decoration: none;
+    color: #b8c7d1;
+}
+
+#contacto li a:hover {
+    color: #f5f5f5;
+    text-shadow: 3px 3px 4px #000;
+}
